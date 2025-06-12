@@ -1,0 +1,12 @@
+EnrollmentID,StudentID,Course,Score
+101,1,Calculus I,90
+102,1,Linear Algebra,85
+103,2,Physics I,78
+104,3,Calculus I,92
+105,4,Chemistry I,88
+106,5,Physics I,95
+107,6,Calculus I,80
+108,7,Chemistry I,75
+109,8,Physics I,82
+110,9,Linear Algebra,88
+111,10,Chemistry I,90
