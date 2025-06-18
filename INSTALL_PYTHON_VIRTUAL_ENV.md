@@ -133,7 +133,7 @@ This should also show that pip is associated with your venv.
 Now that your virtual environment is active, you can install any Python packages you need for your project using **pip**. These packages will be installed **only** within this virtual environment and will not affect your global Python installation or other virtual environments.  
 
 ```bash
-pip install jupyter pandas numpy
+pip install jupyter pandas
 ```
 
 **Step 7: Launch Jupyter Notebook (if installed in venv)**  
