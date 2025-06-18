@@ -23,8 +23,7 @@ With a virtual environment in place you can rely on **Isolation** , **Cleanlines
 without clashing.
 - **Cleanliness**: Keep your global Python installation clean and free from
 project-specific clutter.
-- **Reproducibility**: Makes it easier to share your project with others. You can provide a requirements.txt file (generated with `pip freeze >
-requirements.txt`) that lists all project dependencies, allowing others to
+- **Reproducibility**: Makes it easier to share your project with others. You can provide a requirements.txt file (generated with `pip freeze requirements.txt`) that lists all project dependencies, allowing others to
 easily recreate your environment.
 
 ## Anaconda
