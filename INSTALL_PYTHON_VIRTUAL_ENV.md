@@ -23,7 +23,7 @@ With a virtual environment in place you can rely on **Isolation** , **Cleanlines
 without clashing.
 - **Cleanliness**: Keep your global Python installation clean and free from
 project-specific clutter.
-- **Reproducibility**: Makes it easier to share your project with others. You can provide a requirements.txt file (generated with `pip freeze requirements.txt`) that lists all project dependencies, allowing others to
+- **Reproducibility**: Makes it easier to share your project with others. You can provide a requirements.txt file (generated with `pip freeze > requirements.txt`) that lists all project dependencies, allowing others to
 easily recreate your environment.
 
 ## Anaconda
@@ -97,7 +97,16 @@ After you activate the virutal envornment, your project directory should be prec
 name you gave the virtual environment.  For example, if you create a virtual environment in 
 `path/to/your/existing_project`, and you used `venv` for your virtual envornment, you'll see the prompt is prefaced by `(venv)`:   
 `(venv) path/to/your/existing_project`.  
-This verifies the creation of the virutal environment.  
+This verifies the creation of the virutal environment. 
+
+**Step 5: Create Requirements.txt**
+
+By freezing the requiremnts in a text file, you can recreate the environment on other machines.
+Do this on Mac/Linux command line with this command:
+
+```bash
+pip freeze > requirements.txt
+```
 
 
 
@@ -136,6 +145,15 @@ name you gave the virtual environment.  For example, if you create a virtual env
 (venv) path\to\your\existing_project
 ```
 
+**Step 5: Create Requirements.txt**
+
+By freezing the requiremnts in a text file, you can recreate the environment on other machines.
+Do this on a windows terminal command line with this command:
+
+```bash
+pip freeze > requirements.txt
+```
+
 This verifies the creation of the virutal environment.
 
 ### Using 'pip' to Install Modules on Mac, Linux and Windows
@@ -167,13 +185,15 @@ jupyter notebook
 This will launch Jupyter Notebook using the Python and packages from your activated
 venv.  
 
-## Deactivating the Virtual Environment on Mac, Linux or windows
+## Deactivating the Virtual Environment 
+
+### Mac and Linux
 When you're done working on your project or want to switch to another environment,
 simply type:
 
-### Mac or Linux
-```bash or shell
-source deactivate
+### Windows
+```shell
+deactivate
 ```
 
 
