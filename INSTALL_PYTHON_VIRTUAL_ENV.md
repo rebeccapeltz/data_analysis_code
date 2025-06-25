@@ -88,12 +88,12 @@ created. You can replace venv with any name you prefer (e.g., `myenv`, `env`,
 This command will create a new directory (e.g., `venv`) in your current location. Inside this directory, you'll find a copy of the Python interpreter, pip, and other necessary files for an isolated environment.  
 
 **Step 4: Activate and Verify the Creation of Virtual Environment**  
-After creation, you need to "activate" the virtual environment. Activating it modifies your terminal's PATH variable for that session so that python, pip, and jupyter (if installed in the venv) refer to the executables within the virtual environment, not your global Python installation.  
+After creation, you need to "activate" the virtual environment. Activating it modifies your terminal's PATH variable for that session so that python, pip, and other packages installed in the virtural environment refer to the executables within the virtual environment, not your global Python installation.  
 
 ```bash
 source venv/bin/activate
 ```
-After you activate the virutal envornment, your project directory should be preceded by the
+After you activate the virutal environment, your project directory should be preceded by the
 name you gave the virtual environment.  For example, if you create a virtual environment in 
 `path/to/your/existing_project`, and you used `venv` for your virtual envornment, you'll see the prompt is prefaced by `(venv)`:   
 `(venv) path/to/your/existing_project`.  
@@ -187,16 +187,14 @@ venv.
 
 ## Deactivating the Virtual Environment 
 
-### Mac and Linux
+### Windows, Mac and Linux
 When you're done working on your project or want to switch to another environment,
 simply type:
 
-### Windows
 ```shell
 deactivate
 ```
 
-
-Your terminal prompt will return to normal, and python, pip, etc., will once again refer to your global Python installation.
+The `(venv)` will no longer be visible in front of the directory name.  You're no longer using the Python interpreter and packages specific to the virtual environment.
 
 
