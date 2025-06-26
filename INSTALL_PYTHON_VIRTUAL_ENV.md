@@ -2,19 +2,21 @@
 
 ## Python Installation Options
 
-- Mac or Windows users can download open source Python for free from
-python.org.  
-- Mac users can also use Homebrew to install Python.  
-- Linux users can use the package managers like apt (Ubuntu, Debian), dnf
-(Fedora), or yum (CentOS).  
-- Anaconda is a free open source data science platform that is available to
-Windows, Mac and Linux platforms.  
-If you are new to Python and using Windows or a Mac, you might want to start with
+* Mac and Windows users can download open source Python for free from [python.org](https://www.python.org/downloads/).  
+* Mac users can also use [Homebrew to install Python](https://docs.brew.sh/Homebrew-and-Python).  
+* Linux users can use the package managers like 
+    1. [apt (Ubuntu, Debian)](https://docs.python-guide.org/starting/install3/linux/), 
+    2. dnf (Fedora), or yum (CentOS) (https://developer.fedoraproject.org/tech/languages/python/multiple-pythons.html)
+    3. [yum (CentOS)](https://www.liquidweb.com/blog/how-to-install-python-3-on-centos-7/)  
+* Anaconda is a free open source data science platform that is available to Windows, Mac and Linux platforms.  
+
+If you are new to Python and using Windows or a Mac, start with
 python.org as there is help and a community available.
 
 ## Python Virtual Environment
 
-A Python virtual environment is useful for creating a project that depends on installed packages. Packages give Python access to code functionality beyond the basic language.  
+A Python virtual environment is useful for creating a project that depends on installed packages. Packages give Python access to code functionality beyond the basic language. 
+ 
 If you do not use a virtual environment and install a Python package globally, you may run into problems when different projects require different versions of a package. The virtual environment allows you to select the versions that you need for the project you’re working on.  
 
 With a virtual environment in place you can rely on **Isolation** , **Cleanliness** and **Reproducibility**.  
