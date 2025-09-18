@@ -50,6 +50,19 @@ anything extra.
 ### Mac or Linux 
 
 Note: These instructions assume you can use Bash or Zsh commands. If you are using a Mac, you likely use Zsh which uses the same commands as Bash. 
+
+## requirements.txt
+This repository contains a `requirements.txt` file.  This file was created using `pip install` to install the packages required for the code. You'll see many packages listed in the file.  Not all of these packages were explicitly installed with `pip` because some packages pull in other packages during installation.  You can install these required packages in your local workspace using this command:
+
+```
+pip install -r requirements.txt
+```
+If you install more packages in this environment, you'll want to add them to the requirements.txt file.  You can create or update the `requirements.txt` file using the `freeze` command:
+
+```
+pip freeze > requirements.txt
+```
+
  
 **Step 1: Open Terminal**  
 - **macOS / Linux:** Open your "Terminal" application.  
@@ -101,9 +114,9 @@ name you gave the virtual environment.  For example, if you create a virtual env
 `(venv) path/to/your/existing_project`.  
 This verifies the creation of the virutal environment. 
 
-**Step 5: Create Requirements.txt**
+**Step 5: Create or Update Requirements.txt**
 
-By freezing the requiremnts in a text file, you can recreate the environment on other machines.
+By freezing the requirements in a text file, you can recreate the environment on other machines.
 Do this on Mac/Linux command line with this command:
 
 ```bash
@@ -147,12 +160,12 @@ name you gave the virtual environment.  For example, if you create a virtual env
 (venv) path\to\your\existing_project
 ```
 
-**Step 5: Create Requirements.txt**
+**Step 5: Freeze Requirements.txt**
 
 By freezing the requiremnts in a text file, you can recreate the environment on other machines.
 Do this on a windows terminal command line with this command:
 
-```bash
+```
 pip freeze > requirements.txt
 ```
 
