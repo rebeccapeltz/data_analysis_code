@@ -1,3 +1,4 @@
+.vscode/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -16,4 +17,4 @@ venv/
 ./test.py
 python/
 
-hackathon/
+INSTALL_PYTHON_VIRTUAL_ENV.pdf

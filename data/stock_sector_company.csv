@@ -1,3 +1,4 @@
+# Set of company stock ticker symbols with sector and name active between 2006-2017
 stock,sector,company
 AABA,Financials,Altaba
 AAPL,Technology,Apple Inc.

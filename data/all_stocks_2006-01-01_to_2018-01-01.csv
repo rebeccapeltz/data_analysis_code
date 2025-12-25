@@ -1,5 +1,6 @@
 # Stock data from Kaggle 
 # https://www.kaggle.com/datasets/szrlee/stock-time-series-20050101-to-20171231
+# downloaded from https://github.com/szrlee/Stock-Time-Series-Analysis/tree/master/data
 Date,Open,High,Low,Close,Volume,Name
 2006-01-03,77.76,79.35,77.24,79.11,3117200,MMM
 2006-01-04,79.49,79.49,78.25,78.71,2558000,MMM
