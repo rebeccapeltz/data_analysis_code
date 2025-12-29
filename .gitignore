@@ -14,7 +14,8 @@ venv/
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
-./test.py
-python/
+
+/OLD_FILES
+
 
 INSTALL_PYTHON_VIRTUAL_ENV.pdf

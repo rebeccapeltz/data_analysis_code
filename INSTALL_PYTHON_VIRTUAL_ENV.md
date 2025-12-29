@@ -212,4 +212,11 @@ deactivate
 
 The `(venv)` will no longer be visible in front of the directory name.  You're no longer using the Python interpreter and packages specific to the virtual environment.
 
+### Kernel Install (VS Code)
 
+```
+python -m ipykernel install  --user --display-name "Python(venv)"
+
+
+```
+Ctrl+Shift+P -> Developer: Reload Window
