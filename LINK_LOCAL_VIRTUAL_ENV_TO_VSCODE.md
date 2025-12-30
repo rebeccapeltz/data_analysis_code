@@ -1,6 +1,11 @@
-# Link Virtual Environment to VS Code
+# Link Jupyter Notebook Files to Python to VS Code
 
-If you are using VS Code to write your script, you can link your virtual environment to VS Code so that you can test without creating a server locally.
+If you are using the VS Code IDE to write the Python Script in your Jupyter Notebooks, can make the Jupyter Notebook files execute the code in the file by installing the `ipykernel`.  A kernel is a management system that connects the front end (Jupyter Notebook) to the backend (Python).
+
+If you've already installed Jupyter, you only need to install `ipykernel` to be able to run the code in the IDE files.
+
+
+## Steps to Setting Up 'ipykernel' in Virtual Environment
 
 Start by activating your environment if it isn't already activated.
 
@@ -28,3 +33,9 @@ Select the venv kernal in VS Code. See image below.
 
 ![Select Jupyter Kernel in VS Code](./images/choose_kernel_vscode.jpg)
 
+## Verify
+
+```bash
+import sys
+print(sys.executable)
+```

@@ -35,6 +35,32 @@ The Python Anaconda installation provides a virtual environment. If you are usin
 A virtual environment is associated with a directory on your file system.
 If you are using Anaconda already, you can continue to use it for this course.
 
+## About pip and requirements.txt
+
+**pip** is an acronym for "Pip installs Packages" or "Preferred Installer Program".  It is used to load code packages into your Python environment.  Once we've created a virtual environments, we can use **pip** to install packages from Jupyter Notebook and Plotly.  Because we're using a virtual environment, the packages will be usable only from withint the virtual environment.
+
+We use a `requirements.txt` file to list all the packages we've loaded.  
+
+This repository contains a `requirements.txt` file.  This file was created using `pip install` to install the packages required for the code. You'll see many packages listed in the file.  Not all of these packages were explicitly installed with `pip` because some packages pull in other packages during installation.  
+
+You can install these required packages in your local workspace using these command:
+
+```
+pip install -r requirements.txt
+```
+If you install more packages in this environment, you'll want to add them to the requirements.txt file.  You can create or update the `requirements.txt` file using the `freeze` command:
+
+```
+pip freeze > requirements.txt
+```
+
+The requirements.txt file should be uploaded to GitHub.  If we want others to use our code, the requirements.txt will provide a record of the packages needed to run the code.  For example, when a GitHub repository that contains a requirements.txt file is downloaded, the user can install all of the packages with this command:
+
+```
+pip install -r requirements.txt
+```
+
+
 ## Setting Up Virtual Environments
 
 If you're using Python downloaded directly from python.org (or installed via a
@@ -50,18 +76,6 @@ anything extra.
 ### Mac or Linux 
 
 Note: These instructions assume you can use Bash or Zsh commands. If you are using a Mac, you likely use Zsh which uses the same commands as Bash. 
-
-## requirements.txt
-This repository contains a `requirements.txt` file.  This file was created using `pip install` to install the packages required for the code. You'll see many packages listed in the file.  Not all of these packages were explicitly installed with `pip` because some packages pull in other packages during installation.  You can install these required packages in your local workspace using this command:
-
-```
-pip install -r requirements.txt
-```
-If you install more packages in this environment, you'll want to add them to the requirements.txt file.  You can create or update the `requirements.txt` file using the `freeze` command:
-
-```
-pip freeze > requirements.txt
-```
 
  
 **Step 1: Open Terminal**  
@@ -212,11 +226,4 @@ deactivate
 
 The `(venv)` will no longer be visible in front of the directory name.  You're no longer using the Python interpreter and packages specific to the virtual environment.
 
-### Kernel Install (VS Code)
 
-```
-python -m ipykernel install  --user --display-name "Python(venv)"
-
-
-```
-Ctrl+Shift+P -> Developer: Reload Window
