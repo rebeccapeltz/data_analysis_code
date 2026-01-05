@@ -13,8 +13,11 @@ If you are not in the directory containing this README
 cd <directory containing this README>
 ```
 
-Execute command to install virtual environment and use local `pip` to install
-jupyter and plotly.  Finally open Jupyter Notebook locally.
+Execute commands to install a Python Virtual environment in the document linked to above.
+Once the virtual environment is activated run `pip install <package>` to install packages 
+that will be used in this repository: `jupyter`, `pandas`, and `plotly`.
+
+**Mac** and **Linux** users, execute these commands in the command line interface:
 
 ```bash
 python3 -m venv venv
@@ -23,5 +26,18 @@ pip install jupyter
 pip install plotly
 jupyter notebook
 ```
-The `jupyter` module makes it possible to use Jupyter Notebook locally.  The `plotly` module will be used for create graphs. 
+
+**Windows** users, execute these command in the Window shell
+
+```shell
+python -m venv venv
+.\venv\Scripts\activate
+pip install jupyter
+pip install plotly
+jupyter notebook
+```
+
+The `jupyter` p makes it possible to use Jupyter Notebook locally. 
+The `pandas` package provides functions to manipulate data in Python code.
+The `plotly` module will be used to create data visualations.
 
