@@ -14,7 +14,7 @@ for showing change over time.
 
 ## Chart Description
 
-The data for the animation provided here, contains average closing prices for stock in a 
+The data for the animation visualization provided here, contains average closing prices for stock in a 
 variety of sectors over a period of 11 years.  The underlying chart is a stacked bar chart
 that plots stock sector against the average closing price of a stock (y axis). The stacked bar 
 is composed of individual stocks in the sector.  Over time, these individual stocks change
@@ -79,6 +79,10 @@ This data has no numerical values.  The items analyzed are:
 When Data Exploration is complete, you can move on to creating visualizations with the data.
 
 ## Data Visualization
+
+See [Stock price by sector over time animation](https://github.com/rebeccapeltz/data_analysis_code/blob/main/ANIMATION/animated_bar_chart_avg_close_by_sector.ipynb) for code to complete animation.
+
+The steps to coding the animation are: 
 
 1.  Import plotly.express, pandas and os
 2.  Create and output HTML file name to make your visualization accessible on the web.
