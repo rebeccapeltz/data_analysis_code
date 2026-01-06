@@ -46,7 +46,8 @@ Date,Open,High,Low,Close,Volume,Name
 2006-01-05,78.41,78.65,77.56,77.99,2529500,MMM
 ...
 ```
-The data is joined in Pandaas using `stock` and `Name`:
+The data is joined in Pandaas using `stock` from `stock_sector_company` and `Name` from. 
+`Sample Data for all_stocks 2006-01-01_to_2018-01-01.csv`.  
 
 ```python
 df_merged = pd.merge(df_stocks, df_sectors, left_on='Name', right_on='stock', how='left')
@@ -87,7 +88,7 @@ The steps to coding the animation are:
 1.  Import plotly.express, pandas and os
 2.  Create and output HTML file name to make your visualization accessible on the web.
 3.  Create DataFrames by reading in the CSV data for stock prices and stock sectors.
-4.  Create a `year` column using Datetime to convert a string to a DateTime values and then extract the year .
+4.  Create a `year` column using Datetime to convert a string to a DateTime values and then extract the year.
 5.  Merge the stock prices and stock sector data to create a new DataFrame with data from both files.
 6.  Group merged values by year, stock, sector, company and get averages.
 7.  Rename the columns now that they hold averages.

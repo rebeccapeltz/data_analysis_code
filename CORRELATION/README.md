@@ -25,8 +25,7 @@ Causation: drowning deaths and ice cream sales → caused by heat wave
 ## Chart Description
 
 The data for the correlation visualization provided here, uses two datasets: CO2_emissions.csv and global_temp_anomaly.csv. The CO2 emissions data comes from Plotly ([Figure Friday CO2 Emissions](https://raw.githubusercontent.com/plotly/Figure-Friday/refs/heads/main/2025/week-21/global.1751_2021.csv)) and the Global Temperature Anomolies data comes from [National Oceanic and Atmospheric Administration (NOAA)](https://psl.noaa.gov/data/gridded/data.noaaglobaltemp.html). The code for this 
-project provides visualizations that show the data trends for each data set using lines and bars. The two datasets 
-are not merged until they are set up for a scatter plot. Instead they are each filtered to so that they can be compared by date.  The matching date range
+project provides visualizations that show the data trends for each data set using lines and bars. The two datasets are not merged until they are set up for a scatter plot. Instead they are each filtered to so that they can be compared by date.  The matching date range
 allows for the computation of the Coefficient of Corrleation, which turns out to be a posiive +0.91.  
 
 Finally the two dataset values for C02 Emissions and Temperature Anomolies are plotted against each in a Scatter Plot that shows the positive relationsip.  Finally, color is apply to the Scatter Plot points so that the viewer can
@@ -130,6 +129,7 @@ In order to create the scatter plot the two datasets are merged by joining them 
 df_years = df_merged[['Year']].copy()
 
 # Add century to df merged
+# Use integer division (//) to 
 df_merged['Century'] = ((df_merged['Year'] // 100) * 100).astype(str) + 's'
 ```
 
